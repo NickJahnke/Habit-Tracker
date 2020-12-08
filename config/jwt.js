@@ -5,6 +5,7 @@ module.exports.authenticate = (req, res, next) => {
     if (err) { 
       res.status(401).json({verified: false});
     } else {
+      const userId = payload.id 
       next();
     }
   });

@@ -15,8 +15,8 @@ const HabitSchema = new mongoose.Schema({
         default: 0
     },
     user:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "user"
+        type: String
+        
     }
     
 })
